@@ -1,0 +1,29 @@
+1- Install python
+
+2 - Install pipev ising the following command : 
+	pip install pipenv
+
+3- Run the following command to activate the environment: 
+	pipenvshell 
+
+4- install the needed packages through:
+	pipenv install flask flask_sqlalchemy flask_marshmallow flask_httpauth passlib itsdangerous
+
+5- Run the application:
+	python app.py
+
+6- install postman or curl to use the endpoints
+
+Through postman:
+
+First create user therough POST by:
+To post:
+	localhost:5000/api/users
+	Headers>> Content-Type:application/json
+	enter ur json input through Body
+	
+To Get:
+	open localhost:5000/api/token
+	Go to Authorization and choose type : Basic Auth
+	enter phone number and passsword Or auth-token instead at username
+	at body u will get the auth token as a response 

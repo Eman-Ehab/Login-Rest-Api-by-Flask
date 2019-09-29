@@ -1,0 +1,42 @@
+1- Install python
+
+2 - Install pipev ising the following command : 
+	pip install pipenv
+
+3- Run the following command to activate the environment: 
+	pipenvshell
+
+4- install the needed packages through:
+	pipenv install flask flask_sqlalchemy flask_marshmallow validate_email
+
+5- Run the application:
+	python app.py
+
+6- install postman or curl to use the endpoints
+
+Through postman:
+To post:
+	localhost:5000/api/create
+	Headers>> Content-Type:application/json
+	enter ur json input through Body
+	
+To Get:
+	choose the id number and put it instead of the id
+	localhost:5000/api/user/id
+
+To Delete:
+	all:
+		localhost:5000/api/delete/all
+
+	specific id:
+
+		choose the id number and put it instead of the id
+		localhost:5000/api/delete/id
+to Put:
+	choose the id number and put it instead of the id
+	localhost:5000/api/user/id
+
+	choose the id number and put it instead of the id 
+	Headers>> Content-Type:application/json
+	enter ur json input through Body
+						
